@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ ! -z "$AMM_PREDEF_URL" ]
+then
+  curl -L "$AMM_PREDEF_URL" > ~/.ammonite/predef.sc
+fi
+
+exec "$@"
