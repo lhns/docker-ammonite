@@ -7,5 +7,8 @@ Docker image for [ammonite](http://ammonite.io/).
 ## Docker images
 https://hub.docker.com/repository/docker/lolhens/ammonite
 
+## Environment variables
+- AMM_PREDEF_URL: Downloads a custom predef on startup. Disabled if undefined.
+
 ## License
 This project uses the Apache 2.0 License. See the file called LICENSE.
