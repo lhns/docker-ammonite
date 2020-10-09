@@ -9,15 +9,17 @@ ENV AMM_URL https://github.com/lihaoyi/Ammonite/releases/download/$AMM_VERSION/$
 
 
 RUN apt-get update \
- && apt-get install -y \
+ && apt-get install -y --no-install-recommends -- \
       ca-certificates \
       curl \
- && (echo '#!/usr/bin/env sh' && curl -L "$AMM_URL") > /usr/local/bin/amm \
+ && (echo '#!/usr/bin/env sh' && curl -LSsf -- "$AMM_URL") > /usr/local/bin/amm \
  && chmod +x "/usr/local/bin/amm" \
  && mkdir -p ~/.ammonite
 
 RUN amm -c ""
 
+
 COPY ["entrypoint", "/entrypoint"]
-ENTRYPOINT /entrypoint
+ENTRYPOINT ["/entrypoint"]
+
 CMD amm
