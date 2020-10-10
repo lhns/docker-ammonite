@@ -4,11 +4,13 @@
 
 Docker image for [ammonite](http://ammonite.io/).
 
+Ammonite lets you use the Scala language for scripting purposes.
+
 ## Docker images
 https://hub.docker.com/repository/docker/lolhens/ammonite
 
 ## Environment variables
-- AMM_PREDEF_URL: Downloads a custom predef on startup. Disabled if undefined.
+- **AMM_PREDEF_URL**: Downloads a custom predef on startup. Disabled if undefined.
 
 ## License
 This project uses the Apache 2.0 License. See the file called LICENSE.
