@@ -1,6 +1,6 @@
 # docker-ammonite
+[![Docker Build](https://img.shields.io/docker/build/lolhens/ammonite)](https://hub.docker.com/repository/docker/lolhens/ammonite/builds)
 [![Release Notes](https://img.shields.io/github/release/LolHens/docker-ammonite.svg?maxAge=3600)](https://github.com/LolHens/docker-ammonite/releases/latest)
-[![Docker Build](https://img.shields.io/docker/build/lolhens/ammonite)](https://hub.docker.com/repository/docker/lolhens/ammonite)
 [![Docker Stars](https://img.shields.io/docker/stars/lolhens/ammonite)](https://hub.docker.com/repository/docker/lolhens/ammonite)
 [![Docker Pulls](https://img.shields.io/docker/pulls/lolhens/ammonite)](https://hub.docker.com/repository/docker/lolhens/ammonite)
 [![Docker Image Size](https://img.shields.io/docker/image-size/lolhens/ammonite/latest)](https://hub.docker.com/repository/docker/lolhens/ammonite)
