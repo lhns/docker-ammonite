@@ -8,11 +8,7 @@ ENV AMM_FILE $SCALA_VERSION-$AMM_VERSION
 ENV AMM_URL https://github.com/lihaoyi/Ammonite/releases/download/$AMM_VERSION/$AMM_FILE
 
 
-RUN apt-get update \
- && apt-get install -y --no-install-recommends -- \
-      ca-certificates \
-      curl \
- && (echo '#!/usr/bin/env sh' && curl -LSsf -- "$AMM_URL") > /usr/local/bin/amm \
+RUN (echo '#!/usr/bin/env sh' && curl -LSsf -- "$AMM_URL") > /usr/local/bin/amm \
  && chmod +x "/usr/local/bin/amm" \
  && mkdir -p ~/.ammonite
 
