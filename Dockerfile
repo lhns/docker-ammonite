@@ -1,4 +1,4 @@
-FROM openjdk:16
+FROM openjdk:17
 MAINTAINER LolHens <pierrekisters@gmail.com>
 
 
