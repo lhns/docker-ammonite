@@ -11,7 +11,7 @@ env:
 jobs:
   # Push image to GitHub Packages.
   # See also https://docs.docker.com/docker-hub/builds/
-  push:
+  release:
     runs-on: ubuntu-latest
     permissions:
       packages: write
