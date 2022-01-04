@@ -1,12 +1,10 @@
 FROM openjdk:17
 MAINTAINER LolHens <pierrekisters@gmail.com>
 
-
 ENV SCALA_VERSION 2.13
 ENV AMM_VERSION 2.5.0
 ENV AMM_FILE $SCALA_VERSION-$AMM_VERSION
 ENV AMM_URL https://github.com/lihaoyi/Ammonite/releases/download/$AMM_VERSION/$AMM_FILE
-
 
 RUN microdnf install ncurses \
  && (echo '#!/usr/bin/env sh' && curl -LSsf -- "$AMM_URL") > /usr/local/bin/amm \
@@ -14,7 +12,6 @@ RUN microdnf install ncurses \
  && mkdir -p ~/.ammonite
 
 RUN amm -c ""
-
 
 COPY ["entrypoint", "/entrypoint"]
 ENTRYPOINT ["/entrypoint"]
