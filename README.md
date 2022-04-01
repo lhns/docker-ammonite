@@ -13,7 +13,7 @@ Ammonite lets you use the Scala language for scripting purposes.
 
 ## Docker images
 
-https://github.com/LolHens/docker-ammonite/pkgs/container/ammonite
+https://github.com/lhns/docker-ammonite/pkgs/container/ammonite
 
 https://hub.docker.com/r/lolhens/ammonite
 
