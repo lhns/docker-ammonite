@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM openjdk:21
 MAINTAINER LolHens <pierrekisters@gmail.com>
 
 ENV SCALA_VERSION 2.13
